@@ -10,14 +10,25 @@ it('Access application', () => {
 })
 
 it('Seach', () => {
-    myStorePageObjects.typeSearch('woman');
+    myStorePageObjects.typeSearch('Printed');
  })
 
  it('clickSearch', () => {
    myStorePageObjects.clickSeach();
  })
 
- it('selectMenu', () => {
-   myStorePageObjects.selectMenu().select(T-shirt);
+ it('Singinn', () => {
+  myStorePageObjects.clickSinginn();
  })
 
+ it('Email', () => {
+  myStorePageObjects.typeEmail('suguiomarcelo@gmail.com');
+ })
+
+ it('Password', () => {
+  myStorePageObjects.typePassword('Brad050977');
+ })
+
+ it('Entrar', () => {
+  myStorePageObjects.clickEnter();
+ })

@@ -8,10 +8,21 @@ class MyStoreElements {
         return cy.get('button[name="submit_search"]');
     }
 
-    SelectMenu() {
-        cy.get('a[class="sf-with-ul"]');  
+    btnSinginn() {
+        return cy.get('a[class="login"]');
     }
-  
+
+    imputEmail() {
+        return cy.get('#email');
+    }
+
+    imputPassword() {
+        return cy.get('#passwd');
+    }
+
+    btnEnter() {
+        return cy.get('i[class="icon-lock left"]');
+    }
    
 }
 export default MyStoreElements

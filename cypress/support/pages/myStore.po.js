@@ -4,16 +4,28 @@ const myStoreElements = new MyStoreElements
 
 class MyStorePageObjects {
     
-    typeSearch(Woman) {
-      myStoreElements.inputSearch().type(Woman);
+    typeSearch(Printed) {
+      myStoreElements.inputSearch().type(Printed);
     }
 
     clickSeach() {
       myStoreElements.btnSearch().click();
     }
 
-    selectMenu() {
-      myStoreElements.selectMenu().select(T-shirt);
+    clickSinginn() {
+      myStoreElements.btnSinginn().click();
+    }
+
+    typeEmail(Email) {
+      myStoreElements.imputEmail().type(Email);
+    }
+
+    typePassword(Password) {
+      myStoreElements.imputPassword().type(Password);
+    }
+
+    clickEnter() {
+      myStoreElements.btnEnter().click();
     }
 
     }
