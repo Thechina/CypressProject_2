@@ -3,31 +3,52 @@ import MyStoreElements from '../elements/mystore.elements'
 const myStoreElements = new MyStoreElements
 
 class MyStorePageObjects {
-    
-    typeSearch(Printed) {
+
+  clickSinginn() {
+    myStoreElements.btnSinginn().click();
+  }
+
+  typeEmail(Email) {
+    myStoreElements.imputEmail().type(Email);
+  }
+
+  typePassword(Password) {
+    myStoreElements.imputPassword().type(Password);
+  }
+
+  clickEnter() {
+    myStoreElements.btnEnter().click();
+  }
+
+  typeSearch(Printed) {
       myStoreElements.inputSearch().type(Printed);
     }
 
-    clickSeach() {
+  clickSeach() {
       myStoreElements.btnSearch().click();
     }
 
-    clickSinginn() {
-      myStoreElements.btnSinginn().click();
-    }
+  clickImg() {
+    myStoreElements.imgPrinted().click();
+  }
 
-    typeEmail(Email) {
-      myStoreElements.imputEmail().type(Email);
-    }
+  clickCart() {
+    myStoreElements.btnCart().click();
+    cy.wait(5000);
+  }
 
-    typePassword(Password) {
-      myStoreElements.imputPassword().type(Password);
-    }
+  returnPage() {
+    myStoreElements.returnPage().click();
+  }
 
-    clickEnter() {
-      myStoreElements.btnEnter().click();
-    }
+  clickMenu() {
+    myStoreElements.clickMenu().click();
+  }
 
-    }
+  clickColor() {
+    myStoreElements.inputColor().click();
+  }
+ 
+}
   
 export default MyStorePageObjects 

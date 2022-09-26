@@ -9,26 +9,46 @@ it('Access application', () => {
    cy.visit(url);
 })
 
+it('Singinn', () => {
+   myStorePageObjects.clickSinginn();
+  })
+ 
+it('Email', () => {
+   myStorePageObjects.typeEmail('suguiomarcelo@gmail.com');
+  })
+ 
+it('Password', () => {
+   myStorePageObjects.typePassword('Brad050977');
+  })
+ 
+it('Entrar', () => {
+   myStorePageObjects.clickEnter();
+  })
+
 it('Seach', () => {
     myStorePageObjects.typeSearch('Printed');
  })
 
- it('clickSearch', () => {
+it('clickSearch', () => {
    myStorePageObjects.clickSeach();
  })
 
- it('Singinn', () => {
-  myStorePageObjects.clickSinginn();
+it('clickImg', () => {
+   myStorePageObjects.clickImg();
  })
 
- it('Email', () => {
-  myStorePageObjects.typeEmail('suguiomarcelo@gmail.com');
- })
+it('clickCart', () => {
+   myStorePageObjects.clickCart();
+})
 
- it('Password', () => {
-  myStorePageObjects.typePassword('Brad050977');
- })
+it('returnPage', () => {
+   myStorePageObjects.returnPage();
+})
 
- it('Entrar', () => {
-  myStorePageObjects.clickEnter();
- })
+it('clicktMenu', () => {
+   myStorePageObjects.clickMenu('Dresses');
+})
+
+it('inputColor', () => {
+   myStorePageObjects.clickColor();
+})
