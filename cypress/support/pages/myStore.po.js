@@ -9,11 +9,11 @@ class MyStorePageObjects {
   }
 
   typeEmail(Email) {
-    myStoreElements.imputEmail().type(Email);
+    myStoreElements.inputEmail().type(Email);
   }
 
   typePassword(Password) {
-    myStoreElements.imputPassword().type(Password);
+    myStoreElements.inputPassword().type(Password);
   }
 
   clickEnter() {

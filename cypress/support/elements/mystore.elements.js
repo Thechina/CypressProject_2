@@ -4,11 +4,11 @@ class MyStoreElements {
         return cy.get('a[class="login"]');
     }
 
-    imputEmail() {
+    inputEmail() {
         return cy.get('#email');
     }
 
-    imputPassword() {
+    inputPassword() {
         return cy.get('#passwd');
     }
 
