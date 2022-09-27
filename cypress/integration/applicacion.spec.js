@@ -52,3 +52,7 @@ it('clicktMenu', () => {
 it('inputColor', () => {
    myStorePageObjects.clickColor();
 })
+
+it('inputCart', () => {
+   myStorePageObjects.inputCart();
+})

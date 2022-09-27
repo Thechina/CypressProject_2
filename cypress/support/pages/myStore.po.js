@@ -48,6 +48,10 @@ class MyStorePageObjects {
   clickColor() {
     myStoreElements.inputColor().click();
   }
+
+  inputCart() {
+    myStoreElements.inputCart().click();
+  }
  
 }
   

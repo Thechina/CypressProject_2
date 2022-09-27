@@ -44,5 +44,8 @@ class MyStoreElements {
         return cy.get('input[id="layered_id_attribute_group_16"]');
     }
    
+    inputCart() {
+        return cy.get('.last-in-line > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span');
+    }
 }
 export default MyStoreElements
