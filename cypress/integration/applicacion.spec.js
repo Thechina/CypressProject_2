@@ -9,50 +9,29 @@ it('Access application', () => {
    cy.visit(url);
 })
 
-it('Singinn', () => {
-   myStorePageObjects.clickSinginn();
-  })
- 
-it('Email', () => {
-   myStorePageObjects.typeEmail('suguiomarcelo@gmail.com');
-  })
- 
-it('Password', () => {
-   myStorePageObjects.typePassword('Brad050977');
-  })
- 
-it('Entrar', () => {
-   myStorePageObjects.clickEnter();
-  })
+// it('Login', () => {
+//    myStorePageObjects.clickSinginn();
+//    myStorePageObjects.typeEmail('suguiomarcelo@gmail.com');
+//    myStorePageObjects.typePassword('Brad050977');
+//    myStorePageObjects.clickEnter();
+//   })
 
-it('Seach', () => {
+it('Search For Product', () => {
     myStorePageObjects.typeSearch('Printed');
+    myStorePageObjects.clickSeach();
+    myStorePageObjects.clickImg();
  })
 
-it('clickSearch', () => {
-   myStorePageObjects.clickSeach();
- })
-
-it('clickImg', () => {
-   myStorePageObjects.clickImg();
- })
-
-it('clickCart', () => {
+it('Add Product to cart', () => {
    myStorePageObjects.clickCart();
 })
 
-it('returnPage', () => {
+it('search for new product', () => {
    myStorePageObjects.returnPage();
-})
-
-it('clicktMenu', () => {
-   myStorePageObjects.clickMenu('Dresses');
-})
-
-it('inputColor', () => {
+   myStorePageObjects.clickMenu();
    myStorePageObjects.clickColor();
 })
 
-it('inputCart', () => {
-   myStorePageObjects.inputCart();
+it('Add Product to Cart', () => {
+   myStorePageObjects.clickAddToCart();
 })

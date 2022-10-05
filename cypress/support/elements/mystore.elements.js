@@ -29,7 +29,12 @@ class MyStoreElements {
     }
 
     btnCart() {
-        return cy.get('#add_to_cart > .exclusive');
+        //return cy.get('#add_to_cart > .exclusive');
+        return cy.get('p[id="add_to_cart"]');
+    }
+
+    btnProceedToCheckout() {
+        return cy.get('a[title="Proceed to checkout"]');
     }
 
     returnPage() {
@@ -43,9 +48,10 @@ class MyStoreElements {
     inputColor() {
         return cy.get('input[id="layered_id_attribute_group_16"]');
     }
-   
-    inputCart() {
-        return cy.get('.last-in-line > .product-container > .right-block > .button-container > .ajax_add_to_cart_button > span');
+
+    btnAddToCart() {
+        return cy.get('a').contains('span', 'Add to cart');
     }
+   
 }
 export default MyStoreElements

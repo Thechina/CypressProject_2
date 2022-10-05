@@ -37,6 +37,10 @@ class MyStorePageObjects {
     cy.wait(5000);
   }
 
+  clickProceedToCheckout() {
+    myStoreElements.btnProceedToCheckout().click();
+  }
+
   returnPage() {
     myStoreElements.returnPage().click();
   }
@@ -49,8 +53,8 @@ class MyStorePageObjects {
     myStoreElements.inputColor().click();
   }
 
-  inputCart() {
-    myStoreElements.inputCart().click();
+  clickAddToCart() {
+    myStoreElements.btnAddToCart().click();
   }
  
 }
