@@ -10,7 +10,7 @@ it('Access application', () => {
 })
 
 // it('Login', () => {
-//    myStorePageObjects.clickSinginn();
+//    myStorePageObjects.clickSingin();
 //    myStorePageObjects.typeEmail('suguiomarcelo@gmail.com');
 //    myStorePageObjects.typePassword('Brad050977');
 //    myStorePageObjects.clickEnter();
@@ -18,7 +18,7 @@ it('Access application', () => {
 
 it('Search For Product', () => {
     myStorePageObjects.typeSearch('Printed');
-    myStorePageObjects.clickSeach();
+    myStorePageObjects.clickSearch();
     myStorePageObjects.clickImg();
  })
 

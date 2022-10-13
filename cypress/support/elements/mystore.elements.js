@@ -1,6 +1,6 @@
 class MyStoreElements {
 
-    btnSinginn() {
+    btnSingin() {
         return cy.get('a[class="login"]');
     }
 

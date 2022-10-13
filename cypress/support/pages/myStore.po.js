@@ -4,8 +4,8 @@ const myStoreElements = new MyStoreElements
 
 class MyStorePageObjects {
 
-  clickSinginn() {
-    myStoreElements.btnSinginn().click();
+  clickSingin() {
+    myStoreElements.btnSingin().click();
   }
 
   typeEmail(Email) {
@@ -24,7 +24,7 @@ class MyStorePageObjects {
       myStoreElements.inputSearch().type(Printed);
     }
 
-  clickSeach() {
+  clickSearch() {
       myStoreElements.btnSearch().click();
     }
 
